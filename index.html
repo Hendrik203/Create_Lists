@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+    <div class="header">
+      <h1>Create List</h1>
+      <button id="themeToggle" class="theme-toggle" aria-label="Dark Mode umschalten">🌙</button>
+    </div>
+
+    <div class="input-row">
+      <input id="newItem" type="text" placeholder="Add new entry..." />
+      <input id="imageInput" type="file" accept="image/*" />
+      <label for="imageInput" id="FILElabel">
+        <div class="ImageBox">
+          <p>Choose Image</p>
+          <p id="nofileyet">No file chosen yet</p>
+        </div>
+      </label>
+      <button id="addBtn" aria-label="Hinzufügen">Add</button>
+    </div>
+
+    <ul id="list" class="list" aria-live="polite"></ul>
+
+    <div class="controls">
+      <button id="clearBtn" class="ghost">Delete all</button>
+      <span id="count">0 entries</span>
+      <button id="downloadBtn">Download List</button>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
